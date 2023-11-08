@@ -1,11 +1,11 @@
 id,name,total_attendance,major,standing,year,starting_year,last_attendance_time
-1,Emily Blunt,0,Acting,Freshman,2023,2023-09-01 08:00:00
-2,Elon Musk,0,Engineering,Sophomore,2022,2022-08-15 10:30:00
-3,Sam Altman,0,Computer Science,Senior,2022,2022-09-01 09:45:00
-4,Jeff Bezos,0,Business Administration,Junior,2022,2022-09-01 10:15:00
-5,Mark Zuckerberg,0,Computer Science,Sophomore,2023,2023-09-01 11:30:00
-6,Sundar Pichai,0,Computer Engineering,Junior,2022,2022-09-01 12:45:00
-7,Tim Cook,0,Computer Science,Senior,2022,2022-09-01 14:00:00
-8,Jack Ma,0,Business Administration,Sophomore,2023,2023-09-01 15:15:00
-9,Bill Gates,0,Computer Science,Senior,2022,2022-09-01 16:30:00
-10,Larry Page,0,Computer Science,Junior,2022,2022-09-01 17:45:00
+MS21001,Emily Blunt,0,Acting,Freshman,2023,2023-09-01 08:00:00
+MS21002,Elon Musk,0,Engineering,Sophomore,2022,2022-08-15 10:30:00
+MS21003,Sam Altman,0,Computer Science,Senior,2022,2022-09-01 09:45:00
+MS21004,Jeff Bezos,0,Business Administration,Junior,2022,2022-09-01 10:15:00
+MS21005,Mark Zuckerberg,0,Computer Science,Sophomore,2023,2023-09-01 11:30:00
+MS21006,Sundar Pichai,0,Computer Engineering,Junior,2022,2022-09-01 12:45:00
+MS21007,Tim Cook,0,Computer Science,Senior,2022,2022-09-01 14:00:00
+MS21008,Jack Ma,0,Business Administration,Sophomore,2023,2023-09-01 15:15:00
+MS21009,Bill Gates,0,Computer Science,Senior,2022,2022-09-01 16:30:00
+MS21010,Larry Page,0,Computer Science,Junior,2022,2022-09-01 17:45:00
