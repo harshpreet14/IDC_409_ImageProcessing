@@ -38,7 +38,7 @@ Store the images in ```Images``` folder in root directory.
 To train the face recognition model, we will use a popular pre-trained model called "dlib_face_recognition_resnet_model_v1." This model provides a 128-dimensional face embedding for each face detected in an image.
 Load the labeled face images, detect faces, and extract facial landmarks using the dlib library. Then, utilize the pre-trained model to compute the face embeddings for each image. Store the computed embeddings along with the corresponding person's label in a dictionary or a data frame.
 
-##Implementing the Attendance System
+## Implementing the Attendance System
 <a name="implementing-the-attendance-system"></a>
 
 Now that we have trained our face recognition model, we can proceed to implement the attendance system. The system will follow these steps: 
