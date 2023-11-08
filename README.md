@@ -123,7 +123,7 @@ if faceCurFrame:
                 student_id = studentIds[matchIndex]
 ```
 
-7. **If a match is found, mark the attendance for that person**
+5. **If a match is found, mark the attendance for that person**
 ```python
  # Save updated data back to CSV
                         with open("students.csv", 'a') as csvfile:
