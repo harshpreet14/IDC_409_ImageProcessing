@@ -8,6 +8,7 @@ This project implements a face recognition-based attendance system using Python 
 2. [Collecting Training Data](#collecting-training-data)
 3. [Preprocessing and Training the Face Recognition Model](#preprocessing-and-training-the-face-recognition-model)
 4. [Implementing the Attendance System](#implementing-the-attendance-system)
+5. [Challenges Faced by Face Recognition System](#challenges-faced-by-face-recognition-system)
 
 ---
 
@@ -129,3 +130,13 @@ if faceCurFrame:
                             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                             writer.writerow(studentInfo)
 ```
+
+## Challenges Faced by Face Recognition System
+<a name="challenges-faced-by-face-recognition-system"></a>
+
+📍Illumination: It changes the face’s appearance drastically. It is observed that even slight changes in lighting conditions cause a significant impact on its results.<br>
+📍Pose: Facial Recognition systems are highly sensitive to the pose, Which may result in faulty recognition or no recognition if the database is only trained on frontal face view.<br>
+📍Facial Expressions: Different expressions of the same individual are another significant factor that needs to be taken into account. Modern Recognizers can easily deal with it, though.<br>
+📍Low Resolution: The recognizer must be trained on a good-resolution picture. Otherwise, the model will fail to extract features.<br>
+📍Aging: With increasing age, the human face features shape, lines, and texture changes which are yet another challenge.
+
