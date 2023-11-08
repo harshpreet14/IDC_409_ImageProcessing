@@ -33,6 +33,7 @@ To build our face recognition attendance system, we will need the following Pyth
 
 📍*Pandas*: For managing and analyzing the attendance data.
 
+**NOTE**- Please make sure to use Python version 3.6.8 and exact versions of libraries according to ```requirements.txt```, else the code might not work due to version incompatibility. 
 
 ## 📍Collecting Training Data
 <a name="collecting-training-data"></a>
