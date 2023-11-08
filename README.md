@@ -20,10 +20,10 @@ This project implements a face recognition-based attendance system using Python 
 4. Next, run ```pip install -r requirements.txt```
    
 To build our face recognition attendance system, we will need the following Python libraries:
-*OpenCV*: For computer vision tasks such as face detection and image processing.
-*Dlib*: A powerful library that provides facial landmark detection and face alignment capabilities.
-*face_recognition*: A Python library built on top of dlib, designed specifically for face recognition tasks.
-*Pandas*: For managing and analyzing the attendance data.
+-📍*OpenCV*: For computer vision tasks such as face detection and image processing.
+-📍*Dlib*: A powerful library that provides facial landmark detection and face alignment capabilities.
+-📍*face_recognition*: A Python library built on top of dlib, designed specifically for face recognition tasks.
+-📍*Pandas*: For managing and analyzing the attendance data.
 
 
 ## Collecting Training Data
