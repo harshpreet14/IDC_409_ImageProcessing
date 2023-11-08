@@ -18,11 +18,16 @@ This project implements a face recognition-based attendance system using Python 
 2. Download C++ Desktop development tools [here](https://code.visualstudio.com/docs/languages/cpp).
 3. Create a empty folder and run the following command in the terminal ``` git clone https://github.com/harshpreet14/IDC_409_ImageProcessing.git```
 4. Next, run ```pip install -r requirements.txt```
+
    
 To build our face recognition attendance system, we will need the following Python libraries:<br>
+
 📍*OpenCV*: For computer vision tasks such as face detection and image processing.<br>
+
 📍*Dlib*: A powerful library that provides facial landmark detection and face alignment capabilities.<br>
+
 📍*face_recognition*: A Python library built on top of dlib, designed specifically for face recognition tasks.<br>
+
 📍*Pandas*: For managing and analyzing the attendance data.
 
 
