@@ -16,8 +16,9 @@ This project implements a face recognition-based attendance system using Python 
 
 1. Visit the [official Python website](https://www.python.org/downloads/release) to download the Python version 3.6.8 on your local system.
 2. Download C++ Desktop development tools [here](https://code.visualstudio.com/docs/languages/cpp).
-3. Create a empty folder and run the following command in the terminal ```python git clone https://github.com/harshpreet14/IDC_409_ImageProcessing.git```
-5. Next, run ```python pip install -r requirements.txt```
+3. Create a empty folder and run the following command in the terminal
+   ```git clone https://github.com/harshpreet14/IDC_409_ImageProcessing.git```
+5. Next, run ```pip install -r requirements.txt```
 
    
 To build our face recognition attendance system, we will need the following Python libraries:<br>
@@ -45,14 +46,33 @@ To train the face recognition model, we will use a popular pre-trained model cal
 1. **Load images**
 After importing libraries you need to load an image. By default, face_recognition library loads images in the form of BGR, in order to print the image you should convert it into RGB using OpenCV.
 ```python
+# Importing the student images
 folderPath = 'Images'
 pathList = os.listdir(folderPath)
 imgList = []
-studentIds = []
-
+studentIds =[]
 for path in pathList:
     imgList.append(cv2.imread(os.path.join(folderPath, path)))
     studentIds.append(os.path.splitext(path)[0])
+```
+
+2. **Find Encodings for Images**
+```python
+def findEncodings(imagesList):
+    encodeList=[]
+    for img in imagesList:
+        img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        encode = face_recognition.face_encodings(img)[0]
+        encodeList.append(encode)
+
+    return encodeList
+```
+3.**Save Encodings as pickle file**
+```python
+file = open("EncodeFile.p", "wb")
+pickle.dump(encodeListKnownWithIds, file)
+file.close()
+print("File Saved")
 ```
 
 ## Implementing the Attendance System
