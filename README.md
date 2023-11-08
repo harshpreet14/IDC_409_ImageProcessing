@@ -41,7 +41,19 @@ Store the images in ```Images``` folder in root directory.
 <a name="preprocessing-and-training-the-face-recognition-model"></a>
 
 To train the face recognition model, we will use a popular pre-trained model called "dlib_face_recognition_resnet_model_v1." This model provides a 128-dimensional face embedding for each face detected in an image.
-Load the labeled face images, detect faces, and extract facial landmarks using the dlib library. Then, utilize the pre-trained model to compute the face embeddings for each image. Store the computed embeddings along with the corresponding person's label in a dictionary or a data frame.
+
+1. **Load images**
+After importing libraries you need to load an image. By default, face_recognition library loads images in the form of BGR, in order to print the image you should convert it into RGB using OpenCV.
+```python
+folderPath = 'Images'
+pathList = os.listdir(folderPath)
+imgList = []
+studentIds = []
+
+for path in pathList:
+    imgList.append(cv2.imread(os.path.join(folderPath, path)))
+    studentIds.append(os.path.splitext(path)[0])
+```
 
 ## Implementing the Attendance System
 <a name="implementing-the-attendance-system"></a>
