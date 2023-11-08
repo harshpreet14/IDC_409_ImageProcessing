@@ -1,7 +1,7 @@
 <h1 style="color:#FF69B4">📌 Face Recognition Attendance System</h1>
 
 
-## Overview
+## 📍Overview
 
 This project implements a face recognition-based attendance system using Python libraries. The system captures video from a webcam, recognizes faces, and updates attendance information in a csv file. 
 ## Table of Contents
@@ -13,7 +13,7 @@ This project implements a face recognition-based attendance system using Python 
 
 ---
 
-## Setting up the Development Environment
+## 📍Setting up the Development Environment
 <a name="setting-up-the-development-environment"></a>
 
 1. Visit the [official Python website](https://www.python.org/downloads/release) to download the Python version 3.6.8 on your local system.
@@ -34,13 +34,13 @@ To build our face recognition attendance system, we will need the following Pyth
 📍*Pandas*: For managing and analyzing the attendance data.
 
 
-## Collecting Training Data
+## 📍Collecting Training Data
 <a name="collecting-training-data"></a>
 
 Before training the face recognition model, we need a dataset of labeled images representing different individuals. Start by gathering images of each person to be recognized. 
 Store the images in ```Images``` folder in root directory.
 
-## Preprocessing and Training the Face Recognition Model
+## 📍Preprocessing and Training the Face Recognition Model
 <a name="preprocessing-and-training-the-face-recognition-model"></a>
 
 To train the face recognition model, we will use a popular pre-trained model called "dlib_face_recognition_resnet_model_v1." This model provides a 128-dimensional face embedding for each face detected in an image.
@@ -77,7 +77,7 @@ file.close()
 print("File Saved")
 ```
 
-## Implementing the Attendance System
+## 📍Implementing the Attendance System
 <a name="implementing-the-attendance-system"></a>
 
 Now that we have trained our face recognition model, we can proceed to implement the attendance system. The system will follow these steps: 
@@ -132,12 +132,12 @@ if faceCurFrame:
                             writer.writerow(studentInfo)
 ```
 
-## Challenges Faced by Face Recognition System
+## 📍Challenges Faced by Face Recognition System
 <a name="challenges-faced-by-face-recognition-system"></a>
 
-📍Illumination: It changes the face’s appearance drastically. It is observed that even slight changes in lighting conditions cause a significant impact on its results.<br>
-📍Pose: Facial Recognition systems are highly sensitive to the pose, Which may result in faulty recognition or no recognition if the database is only trained on frontal face view.<br>
-📍Facial Expressions: Different expressions of the same individual are another significant factor that needs to be taken into account. Modern Recognizers can easily deal with it, though.<br>
-📍Low Resolution: The recognizer must be trained on a good-resolution picture. Otherwise, the model will fail to extract features.<br>
-📍Aging: With increasing age, the human face features shape, lines, and texture changes which are yet another challenge.
+🎯Illumination: It changes the face’s appearance drastically. It is observed that even slight changes in lighting conditions cause a significant impact on its results.<br>
+🎯Pose: Facial Recognition systems are highly sensitive to the pose, Which may result in faulty recognition or no recognition if the database is only trained on frontal face view.<br>
+🎯Facial Expressions: Different expressions of the same individual are another significant factor that needs to be taken into account. Modern Recognizers can easily deal with it, though.<br>
+🎯Low Resolution: The recognizer must be trained on a good-resolution picture. Otherwise, the model will fail to extract features.<br>
+🎯Aging: With increasing age, the human face features shape, lines, and texture changes which are yet another challenge.
 
