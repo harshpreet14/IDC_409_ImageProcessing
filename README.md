@@ -15,9 +15,9 @@ This project implements a face recognition-based attendance system using Python 
 <a name="setting-up-the-development-environment"></a>
 
 1. Visit the [official Python website](https://www.python.org/downloads/release) to download the Python version 3.6.8 on your local system.
-2. Create a empty folder and run the following command in the terminal.
-   ```https://github.com/harshpreet14/IDC_409_ImageProcessing.git```
-3. Next, run ```pip install -r requirements.txt```
+2. Create a empty folder and run the following command in the terminal ```python
+   https://github.com/harshpreet14/IDC_409_ImageProcessing.git
+4. Next, run ```python pip install -r requirements.txt
    
 To build our face recognition attendance system, we will need the following Python libraries:
 *OpenCV*: For computer vision tasks such as face detection and image processing.
