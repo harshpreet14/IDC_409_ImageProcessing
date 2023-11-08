@@ -1,11 +1,12 @@
 import os
 import pickle
 import cv2
+import face_recognition_models
 import face_recognition
 import cvzone
 import numpy as np
 from datetime import datetime
-
+import csv
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
@@ -26,8 +27,18 @@ file = open("EncodeFile.p", "rb")
 encodeListKnownWithIds = pickle.load(file)
 file.close()
 encodeListKnown, studentIds = encodeListKnownWithIds
-#print(studentIds)
+# print(studentIds)
 
+# Load data from csv
+students = []
+with open('students.csv', mode='r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
+        students.append(row)
+
+modeType = 0
+counter = 0
+id = -1
 
 while True:
     success, img = cap.read()
@@ -41,23 +52,22 @@ while True:
     imgBackground[162:162 + 480, 55:55 + 640] = img
     imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[0]
 
-
     for encodeFace, faceLoc in zip(encodeCurFrame, faceCurFrame):
         matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
-    # print("matches", matches)
-    # print("faceDis", faceDis)
+        # print("matches", matches)
+        # print("faceDis", faceDis)
 
         matchIndex = np.argmin(faceDis)
-    # print("Match Index", matchIndex)
+        # print("Match Index", matchIndex)
         if matches[matchIndex]:
             y1, x2, y2, x1 = faceLoc
             y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
             bbox = 55 + x1, 162 + y1, x2 - x1, y2 - y1
             imgBackground = cvzone.cornerRect(imgBackground, bbox, rt=0)
-
-
+            id = studentIds[matchIndex]
 
     #   cv2.imshow("Face Attendance", img)
     cv2.imshow("Face Attendance", imgBackground)
     cv2.waitKey(1)
+
