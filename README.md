@@ -1,4 +1,5 @@
-# 📌 <span style="color:#FF69B4">**Face Recognition Attendance System**</span> 
+<h1 style="color:#FF69B4">📌 Face Recognition Attendance System</h1>
+
 
 ## Overview
 
