@@ -3,7 +3,7 @@
 
 ## 📍Overview
 
-This project implements a face recognition-based attendance system using Python libraries. The system captures video from a webcam, recognizes faces, and updates attendance information in a csv file. 
+This project implements a face recognition-based attendance system using Python libraries. The system captures video from a webcam, recognizes faces, and updates attendance information in csv file. 
 ## Table of Contents
 1. [Setting up the Development Environment](#setting-up-the-development-environment)
 2. [Collecting Training Data](#collecting-training-data)
